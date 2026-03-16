@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: simit-api
+    env: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: PORT
+        value: 3000
+      - key: NODE_ENV
+        value: production
